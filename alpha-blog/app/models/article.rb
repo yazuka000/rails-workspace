@@ -1,4 +1,6 @@
-class Article < ApplicationRecord 
+class Article < ApplicationRecord
+    belongs_to :user
+
     # タイトルが空欄だとエラーになる    ６字から100字の文字列でないとエラーになる
     validates :title, presence: true, length: {minimum: 6, maximum: 100}
 
