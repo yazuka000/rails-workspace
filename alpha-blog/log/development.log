@@ -6671,3 +6671,39 @@ Migrating to CreateUsers (20220830020258)
   [1m[36mUser Destroy (11.2ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 1[0m
   [1m[36mTRANSACTION (13.6ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mArticle Load (27.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  [1m[36mUser Exists? (4.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'aaa' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (3.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'aaa' LIMIT 1[0m
+  [1m[36mUser Create (4.9ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `created_at`, `updated_at`) VALUES ('aaa', 'aaa@ex.com', '2022-08-31 00:10:29.409319', '2022-08-31 00:10:29.409319')[0m
+  [1m[36mTRANSACTION (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists? (5.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'aa' LIMIT 1[0m
+  [1m[36mUser Exists? (3.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'Aaa' LIMIT 1[0m
+  [1m[36mUser Exists? (6.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'mashrur' LIMIT 1[0m
+  [1m[36mUser Exists? (5.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'Aaa@ex.com' LIMIT 1[0m
+  [1m[36mUser Exists? (5.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  [1m[36mUser Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mashrur@ex.com' LIMIT 1[0m
+  [1m[36mUser Exists? (3.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` IS NULL LIMIT 1[0m
+  [1m[36mUser Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mashrur@ex.com' LIMIT 1[0m
+  [1m[36mUser Exists? (3.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'mashrur' LIMIT 1[0m
+  [1m[36mUser Exists? (3.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mashrurex.com' LIMIT 1[0m
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (10.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'aaa' AND `users`.`id` != 2 LIMIT 1[0m
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mashrur@example.com' AND `users`.`id` != 2 LIMIT 1[0m
+  [1m[36mUser Update (2.6ms)[0m  [1m[33mUPDATE `users` SET `users`.`email` = 'mashrur@example.com', `users`.`updated_at` = '2022-08-31 00:28:28.156243' WHERE `users`.`id` = 2[0m
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (3.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'mashrur' AND `users`.`id` != 2 LIMIT 1[0m
+  [1m[36mUser Exists? (5.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mashrur@example.com' AND `users`.`id` != 2 LIMIT 1[0m
+  [1m[36mUser Update (2.7ms)[0m  [1m[33mUPDATE `users` SET `users`.`username` = 'mashrur', `users`.`updated_at` = '2022-08-31 00:29:22.602795' WHERE `users`.`id` = 2[0m
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mUser Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'Aaa' LIMIT 1[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mUser Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'aa' LIMIT 1[0m
