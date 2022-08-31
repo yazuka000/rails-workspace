@@ -7176,3 +7176,975 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 62ms (Views: 58.7ms | ActiveRecord: 0.0ms | Allocations: 6180)
 
 
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:06:59 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (Can't connect to MySQL server on 'db' (115)):
+  
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:45:in `rescue in new_client'
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:39:in `new_client'
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.6) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.6) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.6) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.6) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.6) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:07:04 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (24.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220831013604_add_user_id_to_articles.rb
+
+
+):
+  
+activerecord (6.1.6) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:07:07 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220831013604_add_user_id_to_articles.rb
+
+
+):
+  
+activerecord (6.1.6) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:07:07 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220831013604_add_user_id_to_articles.rb
+
+
+):
+  
+activerecord (6.1.6) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (38.6ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (28.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (57.3ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (26.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (64.5ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (57.0ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (14.9ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE `myapp_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE `myapp_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (26.1ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (21.6ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:17:26 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (29.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220831013604_add_user_id_to_articles.rb
+
+
+):
+  
+activerecord (6.1.6) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:20:36 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (29.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220831013604_add_user_id_to_articles.rb
+
+
+):
+  
+activerecord (6.1.6) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:21:38 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (Can't connect to MySQL server on 'db' (115)):
+  
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:45:in `rescue in new_client'
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:39:in `new_client'
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.6) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.6) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.6) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.6) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.6) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:21:44 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (30.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220831013604_add_user_id_to_articles.rb
+
+
+):
+  
+activerecord (6.1.6) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 172.22.0.1 at 2022-08-31 02:21:46 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220831013604_add_user_id_to_articles.rb
+
+
+):
+  
+activerecord (6.1.6) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (50.2ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (24.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (45.1ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (61.7ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (12.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (146.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_development`[0m
+  [1m[35m (81.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_test`[0m
+  [1m[35m (20.7ms)[0m  [1m[35mCREATE DATABASE `myapp_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE DATABASE `myapp_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (79.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (41.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (21.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20220606074616)
+  [1m[35m (95.1ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `description` text)[0m
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (9.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220606074616')[0m
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddTimestampsToArticles (20220606080044)
+  [1m[35m (56.9ms)[0m  [1m[35mALTER TABLE `articles` ADD `created_at` datetime[0m
+  [1m[35m (42.5ms)[0m  [1m[35mALTER TABLE `articles` ADD `update_at` datetime[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220606080044')[0m
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20220830020258)
+  [1m[35m (52.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220830020258')[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToArticles (20220831013604)
+  [1m[35m (38.3ms)[0m  [1m[35mALTER TABLE `articles` ADD `user_id` int[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220831013604')[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-08-31 02:27:01.939417', '2022-08-31 02:27:01.939417')[0m
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 192.168.16.1 at 2022-08-31 02:28:27 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.7ms | Allocations: 449)
+  Rendered layouts/_messages.html.erb (Duration: 1.6ms | Allocations: 184)
+  Rendered layouts/_footer.html.erb (Duration: 2.6ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 173.2ms | Allocations: 10406)
+Completed 200 OK in 201ms (Views: 182.2ms | ActiveRecord: 0.0ms | Allocations: 14201)
+
+
+Started GET "/articles" for 192.168.16.1 at 2022-08-31 02:28:31 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 177)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 6028)
+Completed 200 OK in 82ms (Views: 52.0ms | ActiveRecord: 1.6ms | Allocations: 9162)
+
+
+Started GET "/articles/new" for 192.168.16.1 at 2022-08-31 02:28:40 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.7ms | Allocations: 167)
+  Rendered articles/_form.html.erb (Duration: 39.1ms | Allocations: 3616)
+  Rendered articles/new.html.erb within layouts/application (Duration: 43.9ms | Allocations: 3903)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 165)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 82.6ms | Allocations: 8605)
+Completed 200 OK in 113ms (Views: 85.3ms | ActiveRecord: 21.0ms | Allocations: 12615)
+
+
+Started POST "/articles" for 192.168.16.1 at 2022-08-31 02:28:57 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"First article", "description"=>"First Description"}, "commit"=>"Create Article"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:20:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.5ms | Allocations: 553)
+  Rendered articles/_form.html.erb (Duration: 3.4ms | Allocations: 1685)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1751)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 165)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 6363)
+Completed 200 OK in 90ms (Views: 40.8ms | ActiveRecord: 7.2ms | Allocations: 11913)
+
+
+  [1m[36mUser Load (32.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (7.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'yazuka' LIMIT 1[0m
+  [1m[36mUser Exists? (5.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'yazuka@example.com' LIMIT 1[0m
+  [1m[36mUser Create (17.6ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `created_at`, `updated_at`) VALUES ('yazuka', 'yazuka@example.com', '2022-08-31 02:30:38.572236', '2022-08-31 02:30:38.572236')[0m
+  [1m[36mTRANSACTION (18.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mArticle Load (8.9ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+Started GET "/" for 192.168.16.1 at 2022-08-31 02:31:38 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.5ms | Allocations: 449)
+  Rendered layouts/_messages.html.erb (Duration: 1.5ms | Allocations: 184)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 178.4ms | Allocations: 10406)
+Completed 200 OK in 204ms (Views: 187.8ms | ActiveRecord: 0.0ms | Allocations: 14208)
+
+
+Started GET "/articles/new" for 192.168.16.1 at 2022-08-31 02:31:42 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.0ms | Allocations: 169)
+  Rendered articles/_form.html.erb (Duration: 28.3ms | Allocations: 3658)
+  Rendered articles/new.html.erb within layouts/application (Duration: 32.3ms | Allocations: 3992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 174)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 77.6ms | Allocations: 8730)
+Completed 200 OK in 120ms (Views: 80.5ms | ActiveRecord: 12.1ms | Allocations: 15074)
+
+
+Started POST "/articles" for 192.168.16.1 at 2022-08-31 02:31:58 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"First article", "description"=>"First description\r\n"}, "commit"=>"Create Article"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:21:in `create'
+  [1m[36mArticle Create (2.5ms)[0m  [1m[32mINSERT INTO `articles` (`title`, `description`, `created_at`, `user_id`) VALUES ('First article', 'First description\r\n', '2022-08-31 02:31:58', 1)[0m
+  ↳ app/controllers/articles_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:21:in `create'
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 63ms (ActiveRecord: 19.6ms | Allocations: 9710)
+
+
+Started GET "/articles/1" for 192.168.16.1 at 2022-08-31 02:31:58 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (2.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:46:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 167)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 5824)
+Completed 200 OK in 49ms (Views: 40.5ms | ActiveRecord: 2.4ms | Allocations: 7884)
+
+
+Started GET "/articles/1/edit" for 192.168.16.1 at 2022-08-31 02:32:13 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:46:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.2ms | Allocations: 10)
+  Rendered articles/_form.html.erb (Duration: 2.9ms | Allocations: 1188)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1336)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 165)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 5871)
+Completed 200 OK in 81ms (Views: 73.5ms | ActiveRecord: 1.6ms | Allocations: 7046)
+
+
+Started GET "/articles" for 192.168.16.1 at 2022-08-31 02:32:16 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 29.3ms | Allocations: 3192)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 167)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 68.2ms | Allocations: 7913)
+Completed 200 OK in 73ms (Views: 68.2ms | ActiveRecord: 3.1ms | Allocations: 8614)
+
+
+Started GET "/articles" for 192.168.16.1 at 2022-08-31 02:32:20 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1615)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 166)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 6162)
+Completed 200 OK in 60ms (Views: 55.3ms | ActiveRecord: 3.3ms | Allocations: 6768)
+
+
+Started GET "/articles" for 192.168.16.1 at 2022-08-31 02:33:36 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (25.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (12.0ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 107.7ms | Allocations: 13695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 2.2ms | Allocations: 378)
+  Rendered layouts/_messages.html.erb (Duration: 2.8ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 1.8ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 281.7ms | Allocations: 23557)
+Completed 200 OK in 321ms (Views: 239.9ms | ActiveRecord: 51.0ms | Allocations: 29111)
+
+
+Started GET "/articles" for 192.168.16.1 at 2022-08-31 02:33:42 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 166)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 67.1ms | Allocations: 6177)
+Completed 200 OK in 72ms (Views: 66.1ms | ActiveRecord: 4.1ms | Allocations: 6808)
+
+
+Started GET "/articles" for 192.168.16.1 at 2022-08-31 02:33:45 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1619)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 166)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 61.7ms | Allocations: 6167)
+Completed 200 OK in 67ms (Views: 62.0ms | ActiveRecord: 3.8ms | Allocations: 6706)
+
+
+Started GET "/articles" for 192.168.16.1 at 2022-08-31 02:33:47 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1619)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 166)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 61.8ms | Allocations: 6170)
+Completed 200 OK in 66ms (Views: 62.2ms | ActiveRecord: 3.3ms | Allocations: 6739)
+
+
+Started GET "/articles/1/edit" for 192.168.16.1 at 2022-08-31 02:33:50 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (2.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:46:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 3.2ms | Allocations: 167)
+  Rendered articles/_form.html.erb (Duration: 25.6ms | Allocations: 2986)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 31.2ms | Allocations: 3273)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 165)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 7975)
+Completed 200 OK in 80ms (Views: 69.6ms | ActiveRecord: 2.6ms | Allocations: 9328)
+
+
+Started PATCH "/articles/1" for 192.168.16.1 at 2022-08-31 02:33:52 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"First article", "description"=>"First description\r\n"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (2.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:46:in `set_article'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:30:in `update'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:30:in `update'
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 27ms (ActiveRecord: 6.6ms | Allocations: 4011)
+
+
+Started GET "/articles/1" for 192.168.16.1 at 2022-08-31 02:33:52 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:46:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/show.html.erb:20
+  Rendered articles/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 167)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 6344)
+Completed 200 OK in 49ms (Views: 43.7ms | ActiveRecord: 2.3ms | Allocations: 7562)
+
+
+Started GET "/" for 192.168.16.1 at 2022-08-31 02:33:56 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 212)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 4959)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 6289)
+
+
