@@ -8961,3 +8961,678 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 267ms (Views: 224.2ms | ActiveRecord: 18.7ms | Allocations: 22847)
 
 
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:13:56 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (30.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.6ms | Allocations: 178)
+  Rendered users/_form.html.erb (Duration: 30.9ms | Allocations: 4276)
+  Rendered users/new.html.erb within layouts/application (Duration: 36.7ms | Allocations: 4854)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.7ms | Allocations: 373)
+  Rendered layouts/_messages.html.erb (Duration: 1.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 212.1ms | Allocations: 14707)
+Completed 200 OK in 287ms (Views: 222.0ms | ActiveRecord: 23.3ms | Allocations: 24060)
+
+
+Started GET "/" for 192.168.80.1 at 2022-09-01 05:13:58 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 212)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 59.3ms | Allocations: 4961)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.0ms | Allocations: 6246)
+
+
+Started GET "/" for 192.168.80.1 at 2022-09-01 05:13:59 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 180)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 4567)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 5162)
+
+
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:14:52 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered users/_form.html.erb (Duration: 2.3ms | Allocations: 1573)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1644)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 175)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | Allocations: 6367)
+Completed 200 OK in 65ms (Views: 43.4ms | ActiveRecord: 13.3ms | Allocations: 11492)
+
+
+Started POST "/users" for 192.168.80.1 at 2022-09-01 05:15:24 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"mosaku", "email"=>"mosaku@example.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Started GET "/" for 192.168.80.1 at 2022-09-01 05:17:02 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (25.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.1ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.7ms | Allocations: 449)
+  Rendered layouts/_messages.html.erb (Duration: 1.7ms | Allocations: 184)
+  Rendered layouts/_footer.html.erb (Duration: 1.6ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 190.5ms | Allocations: 10406)
+Completed 200 OK in 216ms (Views: 199.3ms | ActiveRecord: 0.0ms | Allocations: 14207)
+
+
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:17:08 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.7ms | Allocations: 172)
+  Rendered users/_form.html.erb (Duration: 32.1ms | Allocations: 4148)
+  Rendered users/new.html.erb within layouts/application (Duration: 35.7ms | Allocations: 4482)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 174)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 81.4ms | Allocations: 9220)
+Completed 200 OK in 139ms (Views: 84.1ms | ActiveRecord: 25.4ms | Allocations: 16026)
+
+
+Started POST "/users" for 192.168.80.1 at 2022-09-01 05:17:21 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"mosaku", "email"=>"mosaku@ex.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Started GET "/" for 192.168.80.1 at 2022-09-01 05:23:47 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (26.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.5ms | Allocations: 449)
+  Rendered layouts/_messages.html.erb (Duration: 1.6ms | Allocations: 184)
+  Rendered layouts/_footer.html.erb (Duration: 1.9ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 184.2ms | Allocations: 10406)
+Completed 200 OK in 210ms (Views: 193.4ms | ActiveRecord: 0.0ms | Allocations: 14178)
+
+
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:23:52 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.5ms | Allocations: 172)
+  Rendered users/_form.html.erb (Duration: 35.1ms | Allocations: 4148)
+  Rendered users/new.html.erb within layouts/application (Duration: 38.3ms | Allocations: 4482)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 174)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 84.3ms | Allocations: 9220)
+Completed 200 OK in 132ms (Views: 88.1ms | ActiveRecord: 21.9ms | Allocations: 16023)
+
+
+Started POST "/users" for 192.168.80.1 at 2022-09-01 05:24:08 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"mosaku", "email"=>"mosaku@ex.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (8.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'mosaku' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mosaku@ex.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (11.0ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('mosaku', 'mosaku@ex.com', '2022-09-01 05:24:08.390348', '2022-09-01 05:24:08.390348', '$2a$12$g3TnlgBkZ0SfZtoDI35nwOiYBfs6mm4yQZSUG8ccB4jsCI6.SIHEu')[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 288ms (ActiveRecord: 29.2ms | Allocations: 5979)
+
+
+Started GET "/articles" for 192.168.80.1 at 2022-09-01 05:24:08 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (8.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 44.7ms | Allocations: 7958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 177)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 31)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 79.9ms | Allocations: 12667)
+Completed 200 OK in 93ms (Views: 62.6ms | ActiveRecord: 19.3ms | Allocations: 15105)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:26:16 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (27.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.3ms | Allocations: 178)
+  Rendered users/_form.html.erb (Duration: 33.7ms | Allocations: 4276)
+  Rendered users/new.html.erb within layouts/application (Duration: 38.5ms | Allocations: 4854)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 2.3ms | Allocations: 373)
+  Rendered layouts/_messages.html.erb (Duration: 1.7ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 213.6ms | Allocations: 14705)
+Completed 200 OK in 279ms (Views: 223.7ms | ActiveRecord: 20.5ms | Allocations: 23970)
+
+
+Started POST "/users" for 192.168.80.1 at 2022-09-01 05:26:30 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"yazu", "email"=>"yazu@ex.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (11.8ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = 'yazu' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'yazu@ex.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (10.5ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('yazu', 'yazu@ex.com', '2022-09-01 05:26:31.177069', '2022-09-01 05:26:31.177069', '$2a$12$vj5UzBt7EgrPjg5wbGtH5uVRgzcHLqmkMtMHXT4fLLgiub4WCOaKm')[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 292ms (ActiveRecord: 31.0ms | Allocations: 5964)
+
+
+Started GET "/articles" for 192.168.80.1 at 2022-09-01 05:26:31 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (11.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 47.7ms | Allocations: 7958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 177)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 91.9ms | Allocations: 12667)
+Completed 200 OK in 104ms (Views: 71.8ms | ActiveRecord: 22.4ms | Allocations: 15138)
+
+
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:27:05 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered users/_form.html.erb (Duration: 4.2ms | Allocations: 1341)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 165)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 57.3ms | Allocations: 5937)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms | Allocations: 6537)
+
+
+Started POST "/users" for 192.168.80.1 at 2022-09-01 05:27:09 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = '' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.1ms | Allocations: 2299)
+  Rendered users/_form.html.erb (Duration: 7.1ms | Allocations: 6436)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 6496)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 165)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 10952)
+Completed 200 OK in 90ms (Views: 54.6ms | ActiveRecord: 6.8ms | Allocations: 14955)
+
+
+Started POST "/users" for 192.168.80.1 at 2022-09-01 05:28:45 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (31.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (11.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`username` = '' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 16.1ms | Allocations: 3384)
+  Rendered users/_form.html.erb (Duration: 34.6ms | Allocations: 9413)
+  Rendered users/new.html.erb within layouts/application (Duration: 41.3ms | Allocations: 9991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.6ms | Allocations: 373)
+  Rendered layouts/_messages.html.erb (Duration: 1.5ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 1.9ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 221.4ms | Allocations: 19796)
+Completed 200 OK in 314ms (Views: 243.2ms | ActiveRecord: 33.4ms | Allocations: 33783)
+
+
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:30:13 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (31.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.4ms | Allocations: 1751)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2333)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2419)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 18.9ms | Allocations: 11626)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <%= render 'shared/errors', obj: @user %>
+            <%= form_with(model: @user, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
+                <div class="form-group row">
+                    <%= f.label :username, class: "col-2 col-form-label text-light" %>
+                    <div class="col-10">
+                        <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "Enter a username" %>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <%= f.label :email, class: "col-2 col-form-label text-light" %>
+                    <div class="col-10">
+                        <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email address" %>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <%= f.label :password, class: "col-2 col-form-label text-light" %>
+                    <div class="col-10">
+                        <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Choose a password" %>
+                    </div>
+                </div>
+
+                <div class="form-group row justify-content-center">
+                    <%= f.submit "Sign up" class: "btn btn-outline-light btn-lg"%>
+                </div>
+            <% end %>
+        </div>
+        <div class="mb-3">
+            <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-info" %>
+        </div>
+    </div>
+</div>
+
+):
+1:    <div class="container">
+2:        <div class="row justify-content-center">
+3:            <div class="col-10">
+4:                <%= render 'shared/errors', obj: @user %>
+5:                <%= form_with(model: @user, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
+6:                    <div class="form-group row">
+7:                        <%= f.label :username, class: "col-2 col-form-label text-light" %>
+8:                        <div class="col-10">
+9:                            <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "Enter a username" %>
+10:                        </div>
+11:                    </div>
+12:    
+13:                    <div class="form-group row">
+14:                        <%= f.label :email, class: "col-2 col-form-label text-light" %>
+15:                        <div class="col-10">
+16:                            <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email address" %>
+17:                        </div>
+18:                    </div>
+19:    
+20:                    <div class="form-group row">
+21:                        <%= f.label :password, class: "col-2 col-form-label text-light" %>
+22:                        <div class="col-10">
+23:                            <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Choose a password" %>
+24:                        </div>
+25:                    </div>
+26:    
+27:                    <div class="form-group row justify-content-center">
+28:                        <%= f.submit "Sign up" class: "btn btn-outline-light btn-lg"%>
+29:                    </div>
+30:                <% end %>
+31:            </div>
+32:            <div class="mb-3">
+33:                <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-info" %>
+34:            </div>
+35:        </div>
+36:    </div>
+  
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:2
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:30:24 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.1ms | Allocations: 1395)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1457)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 1531)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2111)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <%= render 'shared/errors', obj: @user %>
+            <%= form_with(model: @user, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
+                <div class="form-group row">
+                    <%= f.label :username, class: "col-2 col-form-label text-light" %>
+                    <div class="col-10">
+                        <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "Enter a username" %>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <%= f.label :email, class: "col-2 col-form-label text-light" %>
+                    <div class="col-10">
+                        <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email address" %>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <%= f.label :password, class: "col-2 col-form-label text-light" %>
+                    <div class="col-10">
+                        <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Choose a password" %>
+                    </div>
+                </div>
+
+                <div class="form-group row justify-content-center">
+                    <%= f.submit "Sign up" class: "btn btn-outline-light btn-lg"%>
+                </div>
+            <% end %>
+        </div>
+        <div class="mb-3">
+            <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-info" %>
+        </div>
+    </div>
+</div>
+
+):
+1:    <div class="container">
+2:        <div class="row justify-content-center">
+3:            <div class="col-10">
+4:                <%= render 'shared/errors', obj: @user %>
+5:                <%= form_with(model: @user, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
+6:                    <div class="form-group row">
+7:                        <%= f.label :username, class: "col-2 col-form-label text-light" %>
+8:                        <div class="col-10">
+9:                            <%= f.text_field :username, class: "form-control shadow rounded", placeholder: "Enter a username" %>
+10:                        </div>
+11:                    </div>
+12:    
+13:                    <div class="form-group row">
+14:                        <%= f.label :email, class: "col-2 col-form-label text-light" %>
+15:                        <div class="col-10">
+16:                            <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email address" %>
+17:                        </div>
+18:                    </div>
+19:    
+20:                    <div class="form-group row">
+21:                        <%= f.label :password, class: "col-2 col-form-label text-light" %>
+22:                        <div class="col-10">
+23:                            <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Choose a password" %>
+24:                        </div>
+25:                    </div>
+26:    
+27:                    <div class="form-group row justify-content-center">
+28:                        <%= f.submit "Sign up" class: "btn btn-outline-light btn-lg"%>
+29:                    </div>
+30:                <% end %>
+31:            </div>
+32:            <div class="mb-3">
+33:                <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-info" %>
+34:            </div>
+35:        </div>
+36:    </div>
+  
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:28: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:2
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:31:10 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (Can't connect to MySQL server on 'db' (115)):
+  
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:45:in `rescue in new_client'
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:39:in `new_client'
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.6) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.6) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.6) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.6) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.6) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:31:14 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (29.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.4ms | Allocations: 185)
+  Rendered users/_form.html.erb (Duration: 32.5ms | Allocations: 4043)
+  Rendered users/new.html.erb within layouts/application (Duration: 35.6ms | Allocations: 4364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 2.4ms | Allocations: 373)
+  Rendered layouts/_messages.html.erb (Duration: 2.0ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 1.7ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 215.4ms | Allocations: 14195)
+Completed 200 OK in 264ms (Views: 218.0ms | ActiveRecord: 19.9ms | Allocations: 22577)
+
+
+Started GET "/" for 192.168.80.1 at 2022-09-01 05:34:39 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActiveRecord::ConnectionNotEstablished (Can't connect to MySQL server on 'db' (115)):
+  
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:45:in `rescue in new_client'
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:39:in `new_client'
+activerecord (6.1.6) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.6) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.6) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.6) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.6) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.6) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 192.168.80.1 at 2022-09-01 05:34:41 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (28.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.9ms | Allocations: 378)
+  Rendered layouts/_messages.html.erb (Duration: 1.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 174.9ms | Allocations: 10145)
+Completed 200 OK in 188ms (Views: 177.2ms | ActiveRecord: 0.0ms | Allocations: 13044)
+
+
+Started GET "/signup" for 192.168.80.1 at 2022-09-01 05:34:43 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.3ms | Allocations: 185)
+  Rendered users/_form.html.erb (Duration: 38.7ms | Allocations: 3965)
+  Rendered users/new.html.erb within layouts/application (Duration: 42.0ms | Allocations: 4299)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 174)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 91.8ms | Allocations: 9037)
+Completed 200 OK in 149ms (Views: 94.0ms | ActiveRecord: 24.8ms | Allocations: 15842)
+
+
+Started GET "/articles" for 192.168.80.1 at 2022-09-01 05:34:48 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (16.9ms)[0m  [1m[34mSELECT `articles`.* FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 67.6ms | Allocations: 8554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 177)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 103.9ms | Allocations: 13258)
+Completed 200 OK in 125ms (Views: 69.6ms | ActiveRecord: 36.9ms | Allocations: 15702)
+
+
+Started GET "/" for 192.168.80.1 at 2022-09-01 05:34:50 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 57)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 166)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 55.5ms | Allocations: 4606)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.0ms | Allocations: 5199)
+
+
