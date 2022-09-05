@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-
   def new
   end
 
@@ -11,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       flash.now[:alert] = "There was something wrong with your login details!"
-      render 'new'
+      render "new"
     end
   end
 
@@ -20,5 +19,4 @@ class SessionsController < ApplicationController
     flash[:notice] = "Logged out"
     redirect_to root_path
   end
-
 end
