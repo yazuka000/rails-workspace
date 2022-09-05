@@ -29,6 +29,10 @@ gem 'will_paginate', '~> 3.3'
 
 gem 'rename'
 
+gem 'solargraph'
+
+gem 'erb-formatter'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
