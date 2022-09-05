@@ -19,6 +19,7 @@ module ApplicationHelper
     image_tag(gravatar_url, alt: user.username, class: "rounded shadow mx-auto d-block")
   end
 
+<<<<<<< HEAD
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -29,4 +30,6 @@ module ApplicationHelper
     !!current_user
   end
 
+=======
+>>>>>>> develop
 end
