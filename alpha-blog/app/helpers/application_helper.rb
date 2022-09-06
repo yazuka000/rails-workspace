@@ -1,7 +1,7 @@
 module ApplicationHelper
 =begin
   # 追記
- def full_title(page_title = '')
+  def full_title(page_title = '')
     base_title = "alpha-blog"
     if page_title.empty?
       base_title
@@ -22,9 +22,4 @@ module ApplicationHelper
       class: "rounded shadow mx-auto d-block"
     )
   end
-
-  def logged_in?
-    !!current_user
-  end
-  
 end
