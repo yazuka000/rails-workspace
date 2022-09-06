@@ -22,4 +22,9 @@ module ApplicationHelper
       class: "rounded shadow mx-auto d-block"
     )
   end
+
+  def logged_in?
+    !!current_user
+  end
+  
 end
