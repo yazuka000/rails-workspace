@@ -18938,3 +18938,399 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 5223)
 
 
+Started GET "/" for 192.168.192.1 at 2022-09-07 00:38:15 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (26.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 515)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 2.1ms | Allocations: 654)
+  Rendered layouts/_messages.html.erb (Duration: 1.9ms | Allocations: 177)
+  Rendered layouts/_footer.html.erb (Duration: 7.8ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 177.0ms | Allocations: 10756)
+Completed 200 OK in 208ms (Views: 190.8ms | ActiveRecord: 0.0ms | Allocations: 14550)
+
+
+Started GET "/" for 192.168.192.1 at 2022-09-07 00:41:37 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 230)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 4919)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 5761)
+
+
+Started GET "/new" for 192.168.192.1 at 2022-09-07 00:42:21 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/articles/new" for 192.168.192.1 at 2022-09-07 00:42:51 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 588)
+
+
+Started GET "/login" for 192.168.192.1 at 2022-09-07 00:42:51 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 38.3ms | Allocations: 2487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 229)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 32)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 76.5ms | Allocations: 7340)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.0ms | Allocations: 8680)
+
+
+Started GET "/articles" for 192.168.192.1 at 2022-09-07 00:43:43 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (20.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mArticle Load (2.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/articles/_article.html.erb:2
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  Rendered articles/_article.html.erb (Duration: 91.9ms | Allocations: 15597)
+  Rendered articles/index.html.erb within layouts/application (Duration: 138.6ms | Allocations: 18957)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 226)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 169.4ms | Allocations: 23703)
+Completed 200 OK in 219ms (Views: 96.9ms | ActiveRecord: 75.9ms | Allocations: 29192)
+
+
+Started GET "/articles/1" for 192.168.192.1 at 2022-09-07 00:43:47 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:47:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/show.html.erb:17
+  Rendered articles/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1584)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 212)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 6173)
+Completed 200 OK in 55ms (Views: 44.5ms | ActiveRecord: 4.0ms | Allocations: 7584)
+
+
+Started GET "/articles/1/edit" for 192.168.192.1 at 2022-09-07 00:43:56 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (2.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:47:in `set_article'
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms | Allocations: 844)
+
+
+Started GET "/login" for 192.168.192.1 at 2022-09-07 00:43:56 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 213)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 5246)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 5799)
+
+
+Started POST "/login" for 192.168.192.1 at 2022-09-07 00:44:14 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"yazuka@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'yazuka@example.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 236ms (ActiveRecord: 1.6ms | Allocations: 1518)
+
+
+Started GET "/users/1" for 192.168.192.1 at 2022-09-07 00:44:14 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:48:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`user_id` = 1 LIMIT 5 OFFSET 0[0m
+  ↳ app/views/articles/_article.html.erb:2
+  Rendered articles/_article.html.erb (Duration: 6.4ms | Allocations: 2648)
+  Rendered users/show.html.erb within layouts/application (Duration: 16.8ms | Allocations: 5330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 344)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 10215)
+Completed 200 OK in 62ms (Views: 41.3ms | ActiveRecord: 5.0ms | Allocations: 13879)
+
+
+Started GET "/users/1/edit" for 192.168.192.1 at 2022-09-07 00:44:39 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:48:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 3.3ms | Allocations: 183)
+  Rendered users/_form.html.erb (Duration: 10.4ms | Allocations: 2153)
+  Rendered users/edit.html.erb within layouts/application (Duration: 15.0ms | Allocations: 2432)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layouts/_navigation.html.erb (Duration: 1.9ms | Allocations: 766)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 7610)
+Completed 200 OK in 54ms (Views: 46.9ms | ActiveRecord: 1.8ms | Allocations: 8779)
+
+
+Started GET "/" for 192.168.192.1 at 2022-09-07 00:44:56 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 14ms (ActiveRecord: 4.7ms | Allocations: 805)
+
+
+Started GET "/articles" for 192.168.192.1 at 2022-09-07 00:44:56 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/articles/_article.html.erb:2
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  Rendered articles/_article.html.erb (Duration: 20.4ms | Allocations: 5729)
+  Rendered articles/index.html.erb within layouts/application (Duration: 28.9ms | Allocations: 7201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 333)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 11909)
+Completed 200 OK in 59ms (Views: 53.0ms | ActiveRecord: 5.4ms | Allocations: 12527)
+
+
+Started GET "/articles" for 192.168.192.1 at 2022-09-07 00:48:07 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/articles/_article.html.erb:2
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  Rendered articles/_article.html.erb (Duration: 41.1ms | Allocations: 13526)
+  Rendered articles/index.html.erb within layouts/application (Duration: 57.1ms | Allocations: 16065)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 349)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 83.5ms | Allocations: 20980)
+Completed 200 OK in 91ms (Views: 59.8ms | ActiveRecord: 25.6ms | Allocations: 22948)
+
+
+Started GET "/articles?page=2" for 192.168.192.1 at 2022-09-07 00:48:19 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 5 OFFSET 5[0m
+  ↳ app/views/articles/_article.html.erb:2
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  Rendered articles/_article.html.erb (Duration: 16.1ms | Allocations: 2911)
+  Rendered articles/index.html.erb within layouts/application (Duration: 28.7ms | Allocations: 4400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 325)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 9101)
+Completed 200 OK in 61ms (Views: 50.4ms | ActiveRecord: 9.3ms | Allocations: 9774)
+
+
+Started GET "/users.6" for 192.168.192.1 at 2022-09-07 00:48:22 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 2[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 4[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 5[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 6[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 40.8ms | Allocations: 8792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 350)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 14075)
+Completed 200 OK in 74ms (Views: 60.6ms | ActiveRecord: 11.1ms | Allocations: 15257)
+
+
+Started GET "/articles?page=2" for 192.168.192.1 at 2022-09-07 00:48:27 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 5 OFFSET 5[0m
+  ↳ app/views/articles/_article.html.erb:2
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  Rendered articles/_article.html.erb (Duration: 14.3ms | Allocations: 2910)
+  Rendered articles/index.html.erb within layouts/application (Duration: 26.2ms | Allocations: 4375)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 325)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 9075)
+Completed 200 OK in 57ms (Views: 48.1ms | ActiveRecord: 7.9ms | Allocations: 9748)
+
+
+Started GET "/articles/6/edit" for 192.168.192.1 at 2022-09-07 00:48:39 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (2.2ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:48:in `set_article'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:56:in `require_same_user'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered articles/_form.html.erb (Duration: 13.7ms | Allocations: 5026)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 19.1ms | Allocations: 5307)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 331)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 10069)
+Completed 200 OK in 70ms (Views: 49.2ms | ActiveRecord: 4.3ms | Allocations: 12394)
+
+
+Started GET "/articles/7/edit" for 192.168.192.1 at 2022-09-07 00:48:59 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (2.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:48:in `set_article'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:56:in `require_same_user'
+Redirected to http://localhost:3000/articles/7
+Filter chain halted as :require_same_user rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 6.1ms | Allocations: 2116)
+
+
+Started GET "/articles/7" for 192.168.192.1 at 2022-09-07 00:48:59 +0000
+Cannot render console from 192.168.192.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:48:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/articles/show.html.erb:17
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered articles/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 326)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 6408)
+Completed 200 OK in 39ms (Views: 32.2ms | ActiveRecord: 3.4ms | Allocations: 7469)
+
+
