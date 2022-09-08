@@ -72,6 +72,7 @@
 ./binlog.000133
 ./binlog.000134
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> develop
 =======
 ./binlog.000135
@@ -80,4 +81,8 @@
 >>>>>>> develop
 =======
 ./binlog.000137
+>>>>>>> develop
+=======
+./binlog.000135
+./binlog.000136
 >>>>>>> develop
