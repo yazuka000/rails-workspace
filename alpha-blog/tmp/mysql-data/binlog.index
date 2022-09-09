@@ -61,28 +61,12 @@
 ./binlog.000128
 ./binlog.000129
 ./binlog.000130
-<<<<<<< HEAD
-<<<<<<< HEAD
-./binlog.000131
-=======
->>>>>>> develop
-=======
 ./binlog.000131
 ./binlog.000132
 ./binlog.000133
 ./binlog.000134
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> develop
-=======
 ./binlog.000135
 ./binlog.000136
-<<<<<<< HEAD
->>>>>>> develop
-=======
-./binlog.000137
->>>>>>> develop
-=======
-./binlog.000135
-./binlog.000136
->>>>>>> develop
+./binlog.000138
+./binlog.000139
+./binlog.000140
