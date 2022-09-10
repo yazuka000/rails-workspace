@@ -73,3 +73,7 @@
 ./binlog.000141
 ./binlog.000142
 ./binlog.000143
+<<<<<<< HEAD
+=======
+./binlog.000144
+>>>>>>> feature
