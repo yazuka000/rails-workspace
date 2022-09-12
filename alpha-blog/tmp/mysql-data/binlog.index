@@ -74,6 +74,13 @@
 ./binlog.000142
 ./binlog.000143
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ./binlog.000144
 >>>>>>> feature
+=======
+./binlog.000144
+./binlog.000145
+./binlog.000146
+./binlog.000147
+>>>>>>> develop
