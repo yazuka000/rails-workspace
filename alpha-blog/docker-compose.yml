@@ -7,6 +7,7 @@ services:
       - ./tmp/mysql-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       TZ: Asia/Tokyo
     ports:
       - '3306:3306'
