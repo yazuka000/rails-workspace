@@ -21608,3 +21608,75 @@ Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 3.4ms | Allocations: 730
 
 
   [1m[36mCategory Load (2.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+Started GET "/" for 192.168.112.1 at 2022-09-14 00:48:38 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (27.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 67ms (ActiveRecord: 33.7ms | Allocations: 9168)
+
+
+Started GET "/articles" for 192.168.112.1 at 2022-09-14 00:48:38 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/articles/_article.html.erb:2
+  Rendered articles/_article.html.erb (Duration: 5.2ms | Allocations: 976)
+  Rendered articles/index.html.erb within layouts/application (Duration: 32.5ms | Allocations: 3005)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layouts/_navigation.html.erb (Duration: 6.2ms | Allocations: 1512)
+  Rendered layouts/_messages.html.erb (Duration: 1.8ms | Allocations: 198)
+  Rendered layouts/_footer.html.erb (Duration: 2.3ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 195.1ms | Allocations: 14037)
+Completed 200 OK in 223ms (Views: 183.2ms | ActiveRecord: 22.0ms | Allocations: 17857)
+
+
+Started GET "/categories/new" for 192.168.112.1 at 2022-09-14 00:48:50 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.8ms | Allocations: 186)
+  Rendered categories/new.html.erb within layouts/application (Duration: 26.8ms | Allocations: 2887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layouts/_navigation.html.erb (Duration: 3.3ms | Allocations: 1032)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 8488)
+Completed 200 OK in 82ms (Views: 61.5ms | ActiveRecord: 11.9ms | Allocations: 12119)
+
+
+Started POST "/categories" for 192.168.112.1 at 2022-09-14 00:48:51 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"name"=>""}, "commit"=>"Create Category"}
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/categories_controller.rb:8:in `create'
+  [1m[36mCategory Exists? (16.7ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = '' LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/categories_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.7ms | Allocations: 1043)
+  Rendered categories/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2922)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layouts/_navigation.html.erb (Duration: 4.2ms | Allocations: 942)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 8294)
+Completed 200 OK in 65ms (Views: 33.1ms | ActiveRecord: 20.7ms | Allocations: 12162)
+
+

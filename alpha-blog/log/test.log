@@ -1627,3 +1627,675 @@ Processing by CategoriesController#show as HTML
   Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 3111)
 Completed 200 OK in 42ms (Views: 37.8ms | ActiveRecord: 1.1ms | Allocations: 4172)
   [1m[36mTRANSACTION (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (9.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (52.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (60.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (56.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (72.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[36mTruncate Tables (173.3ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (174.6ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (173.6ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (175.1ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[35m (3.1ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------------------------
+CreateCategoryTest: test_get_new_category_form_and_create_category
+------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------------------------------------------------
+CreateCategoryTest: test_get_new_category_form_and_reject_invalid_category_submission
+-------------------------------------------------------------------------------------
+  [1m[35m (0.9ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------------
+CategoriesControllerTest: test_should_create_category
+-----------------------------------------------------
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+CategoriesControllerTest: test_should_get_new
+---------------------------------------------
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:50:50 +0000
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:50:50 +0000
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (4.8ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Exists? (5.3ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+Processing by CategoriesController#new as HTML
+Processing by CategoriesController#new as HTML
+  [1m[36mCategory Create (17.8ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:50:50.525340', '2022-09-14 00:50:50.525340')[0m
+  [1m[36mCategory Create (17.1ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:50:50.524775', '2022-09-14 00:50:50.524775')[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:50:50 +0000
+  [1m[35m (28.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:50:50 +0000
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"Travel"}}
+  Rendered shared/_errors.html.erb (Duration: 1.1ms | Allocations: 193)
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.2ms | Allocations: 190)
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  Rendered categories/new.html.erb within layouts/application (Duration: 21.4ms | Allocations: 3059)
+  [1m[36mCategory Exists? (5.0ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Travel' LIMIT 1[0m
+  Rendered shared/_errors.html.erb (Duration: 3.1ms | Allocations: 193)
+  Rendered categories/new.html.erb within layouts/application (Duration: 18.8ms | Allocations: 3013)
+  [1m[36mCategory Create (8.2ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Travel', '2022-09-14 00:50:50.655584', '2022-09-14 00:50:50.655584')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/categories/2
+Completed 302 Found in 43ms (ActiveRecord: 20.0ms | Allocations: 2597)
+  Rendered categories/new.html.erb within layouts/application (Duration: 30.3ms | Allocations: 3059)
+  [1m[35m (12.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------
+CategoriesControllerTest: test_should_get_index
+-----------------------------------------------
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Create (1.2ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:50:50.723923', '2022-09-14 00:50:50.723923')[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories" for 127.0.0.1 at 2022-09-14 00:50:50 +0000
+Processing by CategoriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.2ms | Allocations: 691)
+  Rendered layouts/_messages.html.erb (Duration: 1.5ms | Allocations: 201)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 3171.4ms | Allocations: 24432)
+Completed 200 OK in 3262ms (Views: 3184.1ms | ActiveRecord: 36.9ms | Allocations: 31937)
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:50:53 +0000
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>" "}}
+  Rendered layouts/_navigation.html.erb (Duration: 2.8ms | Allocations: 740)
+  Rendered layouts/_navigation.html.erb (Duration: 5.3ms | Allocations: 691)
+  Rendered layouts/_navigation.html.erb (Duration: 2.5ms | Allocations: 691)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  Rendered layouts/_messages.html.erb (Duration: 1.6ms | Allocations: 189)
+  Rendered layouts/_messages.html.erb (Duration: 1.5ms | Allocations: 201)
+  Rendered layouts/_messages.html.erb (Duration: 1.0ms | Allocations: 201)
+  [1m[36mCategory Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = ' ' LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 3079.7ms | Allocations: 21723)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 134)
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered layouts/_footer.html.erb (Duration: 2.0ms | Allocations: 134)
+Completed 200 OK in 3098ms (Views: 3089.5ms | ActiveRecord: 0.0ms | Allocations: 24039)
+  Rendered layout layouts/application.html.erb (Duration: 3205.7ms | Allocations: 24417)
+  Rendered layout layouts/application.html.erb (Duration: 3212.1ms | Allocations: 24386)
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+Completed 200 OK in 3323ms (Views: 3219.6ms | ActiveRecord: 66.3ms | Allocations: 31922)
+Completed 200 OK in 3242ms (Views: 3222.2ms | ActiveRecord: 0.0ms | Allocations: 27949)
+  Rendered shared/_errors.html.erb (Duration: 1.3ms | Allocations: 1043)
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[31mROLLBACK[0m
+  Rendered categories/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2799)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[31mROLLBACK[0m
+CategoriesControllerTest: test_should_show_category
+---------------------------------------------------
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:50:53 +0000
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+CategoryTest: test_category_should_be_valid
+-------------------------------------------
+  [1m[36mCategory Exists? (3.3ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"Sports"}}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mCategory Create (4.0ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:50:53.888981', '2022-09-14 00:50:53.888981')[0m
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+CategoryTest: test_category_should_be_present
+---------------------------------------------
+  [1m[36mCategory Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 212)
+  [1m[36mCategory Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = ' ' LIMIT 1[0m
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 24)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/categories/4" for 127.0.0.1 at 2022-09-14 00:50:53 +0000
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (2.9ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:50:53.902363', '2022-09-14 00:50:53.902363')[0m
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 5762)
+-----------------------------------------------
+Processing by CategoriesController#show as HTML
+Completed 200 OK in 74ms (Views: 58.7ms | ActiveRecord: 3.3ms | Allocations: 7349)
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+CategoryTest: test_name_should_not_be_too_short
+  Parameters: {"id"=>"4"}
+Redirected to http://www.example.com/categories/1
+-----------------------------------------------
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 4 LIMIT 1[0m
+Completed 302 Found in 29ms (ActiveRecord: 10.2ms | Allocations: 1998)
+  [1m[36mCategory Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'aa' LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------
+  Rendered categories/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 93)
+CategoryTest: test_name_should_be_unique
+----------------------------------------
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[35m (15.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Create (3.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:50:53.939512', '2022-09-14 00:50:53.939512')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mCategory Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+Started GET "/categories/1" for 127.0.0.1 at 2022-09-14 00:50:53 +0000
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[31mROLLBACK[0m
+CategoryTest: test_name_should_not_be_too_long
+----------------------------------------------
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'aaaaaaaaaaaaaaaaaaaaaaaaaa' LIMIT 1[0m
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 222)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 68.5ms | Allocations: 2937)
+Completed 200 OK in 76ms (Views: 71.8ms | ActiveRecord: 1.4ms | Allocations: 3794)
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[31mROLLBACK[0m
+  Rendered layouts/_navigation.html.erb (Duration: 12.1ms | Allocations: 226)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 3111)
+Completed 200 OK in 49ms (Views: 43.3ms | ActiveRecord: 1.0ms | Allocations: 4148)
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[36mTruncate Tables (87.3ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (87.7ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (96.2ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (109.3ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------------------------
+CreateCategoryTest: test_get_new_category_form_and_create_category
+------------------------------------------------------------------
+  [1m[35m (1.3ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------------------------------------------------
+CreateCategoryTest: test_get_new_category_form_and_reject_invalid_category_submission
+-------------------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------------
+CategoriesControllerTest: test_should_create_category
+-----------------------------------------------
+-----------------------------------------------------
+CategoriesControllerTest: test_should_get_index
+-----------------------------------------------
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:52:37 +0000
+Processing by CategoriesController#new as HTML
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:52:38 +0000
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (5.8ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Exists? (4.3ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Create (3.1ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:38.043122', '2022-09-14 00:52:38.043122')[0m
+  [1m[36mCategory Create (1.4ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:38.046883', '2022-09-14 00:52:38.046883')[0m
+Processing by CategoriesController#new as HTML
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories" for 127.0.0.1 at 2022-09-14 00:52:38 +0000
+  [1m[35m (15.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.6ms | Allocations: 193)
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:52:38 +0000
+Processing by CategoriesController#index as HTML
+  Rendered categories/new.html.erb within layouts/application (Duration: 26.5ms | Allocations: 3059)
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"Travel"}}
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 3.3ms | Allocations: 193)
+  Rendered categories/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 284)
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (3.7ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Travel' LIMIT 1[0m
+  Rendered categories/new.html.erb within layouts/application (Duration: 24.4ms | Allocations: 3059)
+  [1m[36mCategory Create (1.3ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Travel', '2022-09-14 00:52:38.131756', '2022-09-14 00:52:38.131756')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/categories/2
+Completed 302 Found in 29ms (ActiveRecord: 6.9ms | Allocations: 2598)
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+CategoriesControllerTest: test_should_get_new
+---------------------------------------------
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Create (1.2ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:38.172732', '2022-09-14 00:52:38.172732')[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:52:38 +0000
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.2ms | Allocations: 190)
+  Rendered categories/new.html.erb within layouts/application (Duration: 17.3ms | Allocations: 2878)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.7ms | Allocations: 691)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_messages.html.erb (Duration: 2.7ms | Allocations: 189)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 1701.8ms | Allocations: 24374)
+  Rendered layouts/_navigation.html.erb (Duration: 1.3ms | Allocations: 777)
+Completed 200 OK in 1713ms (Views: 1708.1ms | ActiveRecord: 0.0ms | Allocations: 26713)
+  Rendered layouts/_messages.html.erb (Duration: 3.0ms | Allocations: 201)
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[31mROLLBACK[0m
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_footer.html.erb (Duration: 1.9ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1813.6ms | Allocations: 21974)
+  Rendered layouts/_navigation.html.erb (Duration: 1.6ms | Allocations: 691)
+  Rendered layouts/_navigation.html.erb (Duration: 2.1ms | Allocations: 691)
+Completed 200 OK in 1844ms (Views: 1826.6ms | ActiveRecord: 0.0ms | Allocations: 25514)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 201)
+  Rendered layouts/_messages.html.erb (Duration: 1.0ms | Allocations: 201)
+  [1m[36mTRANSACTION (12.6ms)[0m  [1m[35mBEGIN[0m
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 134)
+---------------------------------------------------
+CategoriesControllerTest: test_should_show_category
+  Rendered layout layouts/application.html.erb (Duration: 1833.6ms | Allocations: 24594)
+Completed 200 OK in 1895ms (Views: 1842.3ms | ActiveRecord: 29.1ms | Allocations: 32100)
+  Rendered layouts/_footer.html.erb (Duration: 2.0ms | Allocations: 134)
+---------------------------------------------------
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendered layout layouts/application.html.erb (Duration: 1873.7ms | Allocations: 24604)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------
+Completed 200 OK in 1936ms (Views: 1883.7ms | ActiveRecord: 22.8ms | Allocations: 32110)
+CategoryTest: test_name_should_not_be_too_long
+----------------------------------------------
+  [1m[36mCategory Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mCategory Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'aaaaaaaaaaaaaaaaaaaaaaaaaa' LIMIT 1[0m
+  [1m[36mCategory Create (1.6ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:39.957446', '2022-09-14 00:52:39.957446')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:52:39 +0000
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------
+CategoryTest: test_name_should_be_unique
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:52:39 +0000
+----------------------------------------
+Processing by CategoriesController#create as HTML
+Started GET "/categories/4" for 127.0.0.1 at 2022-09-14 00:52:39 +0000
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>" "}}
+  [1m[36mCategory Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  Parameters: {"category"=>{"name"=>"Sports"}}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Create (1.2ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:39.986738', '2022-09-14 00:52:39.986738')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Processing by CategoriesController#show as HTML
+  [1m[36mCategory Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = ' ' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mCategory Load (2.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 4 LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  [1m[36mCategory Create (2.9ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:39.995680', '2022-09-14 00:52:39.995680')[0m
+  Rendering categories/show.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.9ms | Allocations: 1043)
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 95)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendered categories/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2799)
+-------------------------------------------
+Redirected to http://www.example.com/categories/1
+CategoryTest: test_category_should_be_valid
+-------------------------------------------
+Completed 302 Found in 24ms (ActiveRecord: 6.2ms | Allocations: 1999)
+  [1m[36mCategory Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+CategoryTest: test_category_should_be_present
+---------------------------------------------
+  [1m[36mCategory Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = ' ' LIMIT 1[0m
+Started GET "/categories/1" for 127.0.0.1 at 2022-09-14 00:52:40 +0000
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+Processing by CategoriesController#show as HTML
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 228)
+-----------------------------------------------
+CategoryTest: test_name_should_not_be_too_short
+  Parameters: {"id"=>"1"}
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 18)
+-----------------------------------------------
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 212)
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 35)
+  [1m[36mCategory Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'aa' LIMIT 1[0m
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 2972)
+Completed 200 OK in 64ms (Views: 58.9ms | ActiveRecord: 2.4ms | Allocations: 3830)
+  Rendering layout layouts/application.html.erb
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 35)
+  Rendering categories/show.html.erb within layouts/application
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 5762)
+Completed 200 OK in 77ms (Views: 65.3ms | ActiveRecord: 1.8ms | Allocations: 7349)
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 118)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 226)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 3114)
+Completed 200 OK in 64ms (Views: 58.7ms | ActiveRecord: 1.9ms | Allocations: 4157)
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[36mTruncate Tables (82.6ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (94.7ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (100.8ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[36mTruncate Tables (112.6ms)[0m  [1m[35mTRUNCATE TABLE `articles`;
+TRUNCATE TABLE `categories`;
+TRUNCATE TABLE `users`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------
+CategoryTest: test_name_should_not_be_too_short
+-----------------------------------------------
+  [1m[35m (0.9ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+---------------------------------------------
+CategoryTest: test_category_should_be_present
+---------------------------------------------
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+CategoryTest: test_name_should_not_be_too_long
+----------------------------------------------
+----------------------------------------
+CategoryTest: test_name_should_be_unique
+----------------------------------------
+  [1m[36mCategory Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'aa' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+CategoryTest: test_category_should_be_valid
+-------------------------------------------
+  [1m[36mCategory Exists? (4.7ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------------
+CategoriesControllerTest: test_should_create_category
+-----------------------------------------------------
+  [1m[36mCategory Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Exists? (4.0ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'aaaaaaaaaaaaaaaaaaaaaaaaaa' LIMIT 1[0m
+  [1m[36mCategory Exists? (11.6ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = ' ' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mCategory Create (1.9ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:52.325230', '2022-09-14 00:52:52.325230')[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+---------------------------------------------
+  [1m[36mCategory Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+CategoriesControllerTest: test_should_show_category
+CategoriesControllerTest: test_should_get_new
+---------------------------------------------
+---------------------------------------------------
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------
+CategoriesControllerTest: test_should_get_index
+-----------------------------------------------
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Create (1.8ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:52.540763', '2022-09-14 00:52:52.540763')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (19.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:52:52 +0000
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Create (4.1ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:52.593142', '2022-09-14 00:52:52.593142')[0m
+  [1m[36mCategory Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mCategory Create (3.9ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:52.606142', '2022-09-14 00:52:52.606142')[0m
+  [1m[36mCategory Create (4.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:52.605498', '2022-09-14 00:52:52.605498')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"Travel"}}
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:52:52 +0000
+Started GET "/categories" for 127.0.0.1 at 2022-09-14 00:52:52 +0000
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Travel' LIMIT 1[0m
+Started GET "/categories/1" for 127.0.0.1 at 2022-09-14 00:52:52 +0000
+  [1m[36mCategory Create (3.0ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Travel', '2022-09-14 00:52:52.646762', '2022-09-14 00:52:52.646762')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/categories/2
+Completed 302 Found in 34ms (ActiveRecord: 7.0ms | Allocations: 2595)
+Processing by CategoriesController#index as HTML
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+Processing by CategoriesController#new as HTML
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (3.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mCategory Load (2.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 283)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  Rendering layout layouts/application.html.erb
+------------------------------------------------------------------
+CreateCategoryTest: test_get_new_category_form_and_create_category
+  Rendering categories/new.html.erb within layouts/application
+------------------------------------------------------------------
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.8ms | Allocations: 189)
+  Rendered categories/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 338)
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:52:52 +0000
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (Duration: 34.6ms | Allocations: 3010)
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.0ms | Allocations: 189)
+  Rendered categories/new.html.erb within layouts/application (Duration: 23.4ms | Allocations: 2875)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.6ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_messages.html.erb (Duration: 1.1ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 3.5ms | Allocations: 691)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 1161.5ms | Allocations: 22100)
+  Rendered layouts/_messages.html.erb (Duration: 1.5ms | Allocations: 201)
+  Rendered layouts/_navigation.html.erb (Duration: 1.7ms | Allocations: 691)
+Completed 200 OK in 1224ms (Views: 1174.3ms | ActiveRecord: 2.6ms | Allocations: 26149)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_messages.html.erb (Duration: 5.5ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 1191.7ms | Allocations: 24640)
+Completed 200 OK in 1240ms (Views: 1207.7ms | ActiveRecord: 0.0ms | Allocations: 28204)
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[31mROLLBACK[0m
+  Rendered layouts/_navigation.html.erb (Duration: 4.8ms | Allocations: 777)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------------------------------------------------
+  Rendered layouts/_messages.html.erb (Duration: 2.3ms | Allocations: 201)
+CreateCategoryTest: test_get_new_category_form_and_reject_invalid_category_submission
+-------------------------------------------------------------------------------------
+  Rendered layouts/_footer.html.erb (Duration: 12.2ms | Allocations: 134)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 1225.2ms | Allocations: 22093)
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[31mROLLBACK[0m
+  Rendered layout layouts/application.html.erb (Duration: 1126.6ms | Allocations: 24476)
+Completed 200 OK in 1262ms (Views: 1240.6ms | ActiveRecord: 0.0ms | Allocations: 25633)
+Completed 200 OK in 1163ms (Views: 1148.7ms | ActiveRecord: 0.0ms | Allocations: 26815)
+Started GET "/categories/new" for 127.0.0.1 at 2022-09-14 00:52:53 +0000
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[31mROLLBACK[0m
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:52:53 +0000
+Processing by CategoriesController#new as HTML
+  Rendering layout layouts/application.html.erb
+Processing by CategoriesController#create as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Parameters: {"category"=>{"name"=>"Sports"}}
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  Rendered shared/_errors.html.erb (Duration: 3.7ms | Allocations: 180)
+  [1m[36mCategory Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = 'Sports' LIMIT 1[0m
+  [1m[36mCategory Create (1.8ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('Sports', '2022-09-14 00:52:53.973193', '2022-09-14 00:52:53.973193')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/categories/3
+Completed 302 Found in 20ms (ActiveRecord: 6.8ms | Allocations: 965)
+  Rendered categories/new.html.erb within layouts/application (Duration: 24.4ms | Allocations: 2620)
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+Started GET "/categories/3" for 127.0.0.1 at 2022-09-14 00:52:54 +0000
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 217)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 24)
+Processing by CategoriesController#show as HTML
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Parameters: {"id"=>"3"}
+  Rendered layout layouts/application.html.erb (Duration: 50.4ms | Allocations: 5621)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms | Allocations: 6261)
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 3 LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 95)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+Started POST "/categories" for 127.0.0.1 at 2022-09-14 00:52:54 +0000
+[Webpacker] Everything's up-to-date. Nothing to do
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>" "}}
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 222)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 2951)
+  [1m[36mCategory Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` WHERE `categories`.`name` = ' ' LIMIT 1[0m
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 1.2ms | Allocations: 3912)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering categories/new.html.erb within layouts/application
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendered shared/_errors.html.erb (Duration: 1.0ms | Allocations: 1043)
+  Rendered categories/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2799)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 212)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 5789)
+Completed 200 OK in 36ms (Views: 29.6ms | ActiveRecord: 1.6ms | Allocations: 6941)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `categories`[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
