@@ -25438,3 +25438,195 @@ Processing by CategoriesController#show as HTML
 Completed 200 OK in 86ms (Views: 65.7ms | ActiveRecord: 9.5ms | Allocations: 14810)
 
 
+Started GET "/categories/1" for 172.22.0.1 at 2022-09-16 06:53:08 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (9.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:37:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[35m (18.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` INNER JOIN `article_categories` ON `articles`.`id` = `article_categories`.`article_id` WHERE `article_categories`.`category_id` = 1[0m
+  ↳ app/views/categories/show.html.erb:9
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` INNER JOIN `article_categories` ON `articles`.`id` = `article_categories`.`article_id` WHERE `article_categories`.`category_id` = 1 LIMIT 5 OFFSET 0[0m
+  ↳ app/views/articles/_article.html.erb:2
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mCategory Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` INNER JOIN `article_categories` ON `categories`.`id` = `article_categories`.`category_id` WHERE `article_categories`.`article_id` = 7 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:10
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` INNER JOIN `article_categories` ON `categories`.`id` = `article_categories`.`category_id` WHERE `article_categories`.`article_id` = 7[0m
+  ↳ app/views/articles/_article.html.erb:11
+  Rendered collection of categories/_category.html.erb [2 times] (Duration: 2.2ms | Allocations: 361)
+  Rendered articles/_article.html.erb (Duration: 41.6ms | Allocations: 10733)
+  Rendered categories/show.html.erb within layouts/application (Duration: 102.7ms | Allocations: 19071)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 2.2ms | Allocations: 1064)
+  Rendered layouts/_messages.html.erb (Duration: 2.0ms | Allocations: 200)
+  Rendered layouts/_footer.html.erb (Duration: 2.7ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 2238.0ms | Allocations: 36204)
+Completed 200 OK in 2357ms (Views: 2201.1ms | ActiveRecord: 81.8ms | Allocations: 54373)
+
+
+Started DELETE "/logout" for 172.22.0.1 at 2022-09-16 06:53:16 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 597)
+
+
+Started GET "/" for 172.22.0.1 at 2022-09-16 06:53:16 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 275)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 34)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 5131)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 6436)
+
+
+Started GET "/signup" for 172.22.0.1 at 2022-09-16 06:53:20 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 2.8ms | Allocations: 186)
+  Rendered users/_form.html.erb (Duration: 27.2ms | Allocations: 3218)
+  Rendered users/new.html.erb within layouts/application (Duration: 33.0ms | Allocations: 3554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 272)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 26)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 8385)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.0ms | Allocations: 9817)
+
+
+Started GET "/users" for 172.22.0.1 at 2022-09-16 06:54:10 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 1[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 2[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 38.8ms | Allocations: 4542)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 254)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 75.3ms | Allocations: 9124)
+Completed 200 OK in 80ms (Views: 67.6ms | ActiveRecord: 10.7ms | Allocations: 9982)
+
+
+Started GET "/articles_new" for 172.22.0.1 at 2022-09-16 07:06:06 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/articles_new"):
+  
+Started GET "/articles/new" for 172.22.0.1 at 2022-09-16 07:06:12 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ArticlesController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 5ms (Allocations: 570)
+
+
+Started GET "/login" for 172.22.0.1 at 2022-09-16 07:06:13 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1087)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 274)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 6002)
+Completed 200 OK in 33ms (Views: 32.3ms | Allocations: 7200)
+
+
+Started GET "/signup" for 172.22.0.1 at 2022-09-16 07:14:40 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 1197)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 254)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 64.8ms | Allocations: 5874)
+Completed 200 OK in 69ms (Views: 67.6ms | Allocations: 6483)
+
+
+Started GET "/login" for 172.22.0.1 at 2022-09-16 07:23:05 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 255)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 5253)
+Completed 200 OK in 55ms (Views: 54.6ms | Allocations: 5774)
+
+
+Started POST "/login" for 172.22.0.1 at 2022-09-16 07:26:06 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"yazuka@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'yazuka@example.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 263ms (ActiveRecord: 5.5ms | Allocations: 1446)
+
+
+Started GET "/users/1" for 172.22.0.1 at 2022-09-16 07:26:07 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:54:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles` WHERE `articles`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`user_id` = 1 LIMIT 5 OFFSET 0[0m
+  ↳ app/views/articles/_article.html.erb:2
+  [1m[36mCategory Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` INNER JOIN `article_categories` ON `categories`.`id` = `article_categories`.`category_id` WHERE `article_categories`.`article_id` = 1 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:10
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` INNER JOIN `article_categories` ON `categories`.`id` = `article_categories`.`category_id` WHERE `article_categories`.`article_id` = 1[0m
+  ↳ app/views/articles/_article.html.erb:11
+  Rendered collection of categories/_category.html.erb [3 times] (Duration: 0.3ms | Allocations: 260)
+  [1m[36mCategory Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` INNER JOIN `article_categories` ON `categories`.`id` = `article_categories`.`category_id` WHERE `article_categories`.`article_id` = 2 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:10
+  [1m[36mCategory Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `categories` INNER JOIN `article_categories` ON `categories`.`id` = `article_categories`.`category_id` WHERE `article_categories`.`article_id` = 3 LIMIT 1[0m
+  ↳ app/views/articles/_article.html.erb:10
+  Rendered articles/_article.html.erb (Duration: 24.4ms | Allocations: 5668)
+  Rendered users/show.html.erb within layouts/application (Duration: 33.2ms | Allocations: 7309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 510)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 12249)
+Completed 200 OK in 64ms (Views: 51.8ms | ActiveRecord: 8.8ms | Allocations: 13662)
+
+
