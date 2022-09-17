@@ -2,7 +2,6 @@ require "test_helper"
 
 class CreateCategoryTest < ActionDispatch::IntegrationTest
   setup do
-    # @category = Category.create(name: "Sports")
     @admin_user =
       User.create(
         username: "johndoe",
